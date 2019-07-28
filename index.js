@@ -1,7 +1,7 @@
-var log = require('debug')('forecast.io'),
-    request = require('request'),
-    util = require('util'),
-    qs = require('querystring');
+const log = require('debug')('forecast.io')
+const request = require('request')
+const util = require('util')
+const qs = require('querystring');
 
 function ForecastError (errors) {
   Error.captureStackTrace(this, ForecastError);
